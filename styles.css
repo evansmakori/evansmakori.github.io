@@ -737,6 +737,27 @@ a:hover {
   box-shadow: 0 26px 80px rgba(0, 0, 0, 0.4);
 }
 
+/* Dashboard banner */
+.dash-banner {
+  margin: 18px 0 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.dash-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.dash-banner figcaption {
+  padding: 10px 14px;
+  color: rgba(231, 238, 248, 0.72);
+  font-size: 0.86rem;
+}
+
 /* Dashboard gallery */
 .dash-grid {
   margin-top: 18px;
