@@ -40,5 +40,6 @@ Push to the `main` branch — GitHub Pages publishes from `https://github.com/ev
 - Replace `assets/headshot.jpg`, `assets/favicon.png`, and `assets/og-image.jpg` with your own files.
 - Add real project/dashboard screenshots to the cards in `index.html`.
 - Edit `resume.html` with your latest experience and credentials.
-- The two former "Live demo" app links (PolySignal & Fashion Fusion) were removed because their deployments are offline — repoint them to working URLs or add screenshots when republished.
+- The **PolySignal** live link is restored at `https://evansmakori.github.io/polysignal/`.
+- The former **Fashion Fusion** "Live demo" link was removed because that deployment is offline — repoint it to a working URL or add a screenshot when republished.
 
