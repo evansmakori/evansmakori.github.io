@@ -801,6 +801,17 @@ a:hover {
   background: linear-gradient(135deg, var(--c1), var(--c2));
 }
 
+.dash-cover-img {
+  background: #0b1220;
+}
+
+.dash-cover-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .dash-meta {
   display: flex;
   flex-direction: column;
