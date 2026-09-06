@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Evans Moitui Makori — Résumé</title>
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://evansmakori.github.io/resume.html" />
+    <meta name="description" content="Résumé for Evans Moitui Makori, Data Scientist and Analytics Engineer based in Kenya." />
+    <link rel="icon" href="assets/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .resume-page { padding: 40px 0 60px; }
+      .resume-wrap {
+        max-width: 860px; margin: 0 auto;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 18px; background: rgba(255, 255, 255, 0.04);
+        padding: 30px 32px;
+      }
+      .resume-top {
+        display: flex; align-items: center; justify-content: space-between;
+        gap: 16px; flex-wrap: wrap;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        padding-bottom: 18px;
+      }
+      .resume-top h1 { margin: 0; font-family: "Space Grotesk", sans-serif; font-size: 2rem; letter-spacing: -0.4px; }
+      .resume-subtitle { margin: 6px 0 0; color: var(--accent); font-weight: 600; }
+      .resume-contact {
+        display: flex; flex-wrap: wrap; gap: 6px 14px;
+        margin: 10px 0 0; color: rgba(231, 238, 248, 0.78); font-size: 0.9rem;
+      }
+      .resume-actions {
+        position: sticky; top: 74px; display: flex; justify-content: flex-end;
+        gap: 10px; margin-bottom: 16px; z-index: 30;
+      }
+      .resume-sec { margin-top: 22px; }
+      .resume-sec h2 { margin: 0 0 10px; font-family: "Space Grotesk", sans-serif; font-size: 1.05rem; color: var(--accent); }
+      .resume-list { margin: 0; padding: 0 0 0 18px; color: rgba(231, 238, 248, 0.82); line-height: 1.6; }
+      .resume-list li { margin: 4px 0; }
+      .resume-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+      @media (max-width: 620px) {
+        .resume-row { grid-template-columns: 1fr; }
+        .resume-wrap { padding: 20px; }
+      }
+      @media print {
+        .site-header, .site-footer, .resume-actions { display: none !important; }
+        body { background: #fff; color: #111; }
+        .resume-page { padding: 0; }
+        .resume-wrap { border: none; background: none; padding: 0; color: #111; }
+        .resume-top h1 { color: #111; }
+        .resume-subtitle { color: #0f766e; }
+        .resume-sec h2 { color: #0f766e; }
+        .resume-list, .resume-contact { color: #222; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Back to portfolio">
+          <span class="brand-mark" aria-hidden="true">EM</span>
+          <span class="brand-text">Evans Makori</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="resume-page">
+      <div class="container">
+        <div class="resume-actions">
+          <a class="btn ghost" href="index.html">Back to portfolio</a>
+          <a class="btn ghost" href="Evans_Moitui_Makori_CV.pdf" download>Download CV (PDF)</a>
+          <button class="btn primary" type="button" onclick="window.print()">Print / Save PDF</button>
+        </div>
+
+        <div class="resume-wrap">
+          <header class="resume-top">
+            <div>
+              <h1>Evans Moitui Makori</h1>
+              <p class="resume-subtitle">Data Scientist &amp; Analytics Engineer</p>
+              <div class="resume-contact">
+                <span>Kenya</span>
+                <a class="inline-link" href="mailto:evansmakori252@gmail.com">evansmakori252@gmail.com</a>
+                <a class="inline-link" href="https://github.com/evansmakori" target="_blank" rel="noreferrer noopener">github.com/evansmakori</a>
+                <a class="inline-link" href="https://www.linkedin.com/in/evansmoituimakori/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+              </div>
+            </div>
+          </header>
+
+          <section class="resume-sec">
+            <h2>Profile</h2>
+            <p style="color: rgba(231,238,248,0.82); line-height: 1.6;">
+              Kenya-based data scientist with a background in Statistics and Computing. I build analytics products
+              that turn raw data into decisions — combining data extraction/ingestion, modeling, and clear
+              visualization into reliable, end-to-end workflows.
+            </p>
+          </section>
+<section class="resume-sec resume-row">
+            <div>
+              <h2>Skills</h2>
+              <ul class="resume-list">
+                <li>Python, Pandas, NumPy, scikit-learn</li>
+                <li>SQL (PostgreSQL), data modeling &amp; validation</li>
+                <li>FastAPI, WebSockets, React, API design</li>
+                <li>Docker, deployment basics, CI-friendly workflows</li>
+                <li>Tableau, KPI design, narrative dashboarding</li>
+              </ul>
+            </div>
+            <div>
+              <h2>Focus Areas</h2>
+              <ul class="resume-list">
+                <li>Analytics engineering &amp; data pipelines</li>
+                <li>Forecasting, classification, anomaly detection</li>
+                <li>Imbalanced datasets &amp; evaluation workflows</li>
+                <li>Real-time monitoring and automation</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="resume-sec">
+            <h2>Selected Projects</h2>
+            <ul class="resume-list">
+              <li>
+                <strong>PolySignal — Polymarket Analytics Platform:</strong> real-time analytics with ML-powered
+                signals, sentiment analysis, anomaly detection, and a unified risk score (FastAPI, PostgreSQL,
+                WebSockets, React, Docker).
+              </li>
+              <li>
+                <strong>Fashion Fusion — AI Style Generation:</strong> photo → style-variation generator with outfit
+                breakdowns and recommendations (TypeScript, React, AI APIs, microservices).
+              </li>
+              <li>
+                <strong>Bankruptcy Prediction (Poland/Taiwan):</strong> imbalanced classification workflow with
+                sampling strategies and gradient-boosting models.
+              </li>
+              <li>
+                <strong>Patient Room Occupancy &amp; Allocation Monitoring:</strong> real-time healthcare allocation
+                with emergency reallocation (Rust).
+              </li>
+              <li>
+                <strong>Working With APIs (Python):</strong> scalable API ingestion to analysis-ready tables.
+              </li>
+            </ul>
+          </section>
+<section class="resume-sec resume-row">
+            <div>
+              <h2>Experience</h2>
+              <ul class="resume-list">
+                <li>
+                  <strong>Data Scientist &amp; Analytics Engineer</strong><br />
+                  Independent / Impact projects · Kenya
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2>Education</h2>
+              <ul class="resume-list">
+                <li><strong>Degree — Statistics &amp; Computing</strong><br />University</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="resume-sec">
+            <h2>Credentials</h2>
+            <ul class="resume-list">
+              <li>
+                <a class="inline-link" href="https://www.credly.com/users/evans-makori" target="_blank" rel="noreferrer noopener">Credly badges</a>
+                · <a class="inline-link" href="https://www.credential.net/profile/evansmakori561042/wallet" target="_blank" rel="noreferrer noopener">Credential wallet</a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Evans Moitui Makori</p>
+        <p class="footer-links">
+          <a href="index.html">Portfolio</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://evansmakori.github.io/https-github.com-evansmakori/sitemap.xml
+Sitemap: https://evansmakori.github.io/sitemap.xml

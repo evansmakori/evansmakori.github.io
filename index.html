@@ -12,7 +12,7 @@
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#070a12" />
 
-    <link rel="canonical" href="https://evansmakori.github.io/https-github.com-evansmakori/" />
+    <link rel="canonical" href="https://evansmakori.github.io/" />
     <meta name="color-scheme" content="dark light" />
 
     <meta property="og:site_name" content="Evans Moitui Makori" />
@@ -22,8 +22,8 @@
       content="Analytics products, dashboards, and ML prototypes focused on turning raw data into decisions."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://evansmakori.github.io/https-github.com-evansmakori/" />
-    <meta property="og:image" content="https://evansmakori.github.io/https-github.com-evansmakori/assets/og-image.jpg" />
+    <meta property="og:url" content="https://evansmakori.github.io/" />
+    <meta property="og:image" content="https://evansmakori.github.io/assets/og-image.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
@@ -33,7 +33,7 @@
       name="twitter:description"
       content="Data Scientist and analytics builder. Projects, dashboards, and credentials."
     />
-    <meta name="twitter:image" content="https://evansmakori.github.io/https-github.com-evansmakori/assets/og-image.jpg" />
+    <meta name="twitter:image" content="https://evansmakori.github.io/assets/og-image.jpg" />
 
     <link rel="icon" href="assets/favicon.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -43,6 +43,26 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Evans Moitui Makori",
+        "jobTitle": "Data Scientist & Analytics Engineer",
+        "url": "https://evansmakori.github.io/",
+        "image": "https://evansmakori.github.io/assets/headshot.jpg",
+        "email": "mailto:evansmakori252@gmail.com",
+        "description": "Kenya-based data scientist building analytics products that turn raw data into decisions using Python, SQL, and clear visualization.",
+        "sameAs": [
+          "https://github.com/evansmakori",
+          "https://www.linkedin.com/in/evansmoituimakori/",
+          "https://public.tableau.com/app/profile/evans.makori",
+          "https://www.credly.com/users/evans-makori"
+        ],
+        "knowsAbout": ["Data Analytics", "Machine Learning", "Python", "SQL", "Tableau", "FastAPI"]
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -54,11 +74,25 @@
           <span class="brand-text">Evans Makori</span>
         </a>
 
-        <nav class="nav" aria-label="Primary">
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Toggle navigation menu"
+        >
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+
+        <nav class="nav" id="primary-nav" aria-label="Primary">
           <a class="nav-link" href="#projects">Projects</a>
           <a class="nav-link" href="#dashboards">Dashboards</a>
           <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#experience">Experience</a>
           <a class="nav-link" href="#credentials">Credentials</a>
+          <a class="nav-link" href="resume.html">Résumé</a>
           <a class="nav-link" href="#contact">Contact</a>
         </nav>
       </div>
@@ -93,6 +127,13 @@
               <a class="btn ghost" href="https://public.tableau.com/app/profile/evans.makori" target="_blank" rel="noreferrer noopener">Tableau Public</a>
               <a class="btn ghost" href="https://github.com/evansmakori" target="_blank" rel="noreferrer noopener">GitHub</a>
               <a class="btn ghost" href="https://www.linkedin.com/in/evansmoituimakori/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+              <a
+                class="btn subtle"
+                href="Evans_Moitui_Makori_CV.pdf"
+                download
+                aria-label="Download Evans Makori CV as a PDF"
+                >Download CV</a
+              >
             </div>
 
             <div class="mini">
@@ -113,6 +154,21 @@
                 </div>
               </div>
             </div>
+
+            <div class="stats reveal" aria-label="Highlights">
+              <div class="stat">
+                <span class="stat-num">5+</span>
+                <span class="stat-label">Featured projects</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">10+</span>
+                <span class="stat-label">Tools in stack</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">2</span>
+                <span class="stat-label">Credential platforms</span>
+              </div>
+            </div>
           </div>
 
           <aside class="hero-right reveal" aria-label="Quick highlights">
@@ -130,7 +186,8 @@
               </div>
 
               <p class="note">
-                Optional: add a resume PDF in <code>assets/</code> and link it in the hero buttons.
+                <a class="inline-link" href="Evans_Moitui_Makori_CV.pdf" download>Download my CV (PDF)</a> or view the
+                <a class="inline-link" href="resume.html">online résumé</a>.
               </p>
             </div>
           </aside>
@@ -146,6 +203,10 @@
 
           <div class="grid">
             <article class="card reveal">
+              <div class="project-cover" style="--c1:#0e7490;--c2:#2dd4bf" role="img" aria-label="PolySignal project illustration">
+                <span class="cover-glyph" aria-hidden="true">📊</span>
+                <span class="cover-label">Real-time analytics platform</span>
+              </div>
               <div class="card-top">
                 <h3 class="h3">PolySignal - Polymarket Analytics Platform</h3>
                 <p class="card-desc">
@@ -161,13 +222,15 @@
                 <li>Docker</li>
               </ul>
               <div class="card-actions">
-                <a class="btn primary" href="https://polysignal-zp2r4.ondigitalocean.app/" target="_blank" rel="noreferrer noopener" aria-label="Open PolySignal live app">Live</a>
-                <a class="btn ghost" href="https://github.com/evansmakori/PolySignal-Polymarket-Analytics-Platform" target="_blank" rel="noreferrer noopener" aria-label="View PolySignal source code on GitHub">Code</a>
-                <a class="btn ghost" href="https://polysignal-zp2r4.ondigitalocean.app/api/docs" target="_blank" rel="noreferrer noopener" aria-label="Open PolySignal API documentation">API Docs</a>
+                <a class="btn primary" href="https://github.com/evansmakori/PolySignal-Polymarket-Analytics-Platform" target="_blank" rel="noreferrer noopener" aria-label="View PolySignal source code on GitHub">Code</a>
               </div>
             </article>
 
             <article class="card reveal">
+              <div class="project-cover" style="--c1:#7c3aed;--c2:#db2777" role="img" aria-label="Fashion Fusion project illustration">
+                <span class="cover-glyph" aria-hidden="true">✨</span>
+                <span class="cover-label">AI style generation</span>
+              </div>
               <div class="card-top">
                 <h3 class="h3">Fashion Fusion - AI Style Generation</h3>
                 <p class="card-desc">
@@ -184,13 +247,6 @@
               <div class="card-actions">
                 <a
                   class="btn primary"
-                  href="https://svc-01kb2kaj6e225wh9hdv8rwfpfc.01kaabs55f12xsvgzarqrjkdsa.lmapp.run"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  aria-label="Open Fashion Fusion live demo"
-                  >Live</a>
-                <a
-                  class="btn ghost"
                   href="https://github.com/evansmakori/Fashion_Fusion"
                   target="_blank"
                   rel="noreferrer noopener"
@@ -200,6 +256,10 @@
             </article>
 
             <article class="card reveal">
+              <div class="project-cover" style="--c1:#b45309;--c2:#2dd4bf" role="img" aria-label="Bankruptcy Prediction project illustration">
+                <span class="cover-glyph" aria-hidden="true">🏦</span>
+                <span class="cover-label">Imbalanced ML classification</span>
+              </div>
               <div class="card-top">
                 <h3 class="h3">Bankruptcy Prediction (Poland/Taiwan)</h3>
                 <p class="card-desc">
@@ -224,6 +284,10 @@
             </article>
 
             <article class="card reveal">
+              <div class="project-cover" style="--c1:#0369a1;--c2:#38bdf8" role="img" aria-label="Working with APIs project illustration">
+                <span class="cover-glyph" aria-hidden="true">🔌</span>
+                <span class="cover-label">API ingestion to tables</span>
+              </div>
               <div class="card-top">
                 <h3 class="h3">Working With APIs (Python)</h3>
                 <p class="card-desc">Examples of pulling data from APIs and transforming it into analysis-ready tables.</p>
@@ -245,6 +309,10 @@
             </article>
 
             <article class="card reveal">
+              <div class="project-cover" style="--c1:#7f1d1d;--c2:#f43f5e" role="img" aria-label="Patient Room Occupancy project illustration">
+                <span class="cover-glyph" aria-hidden="true">🏥</span>
+                <span class="cover-label">Real-time healthcare allocation</span>
+              </div>
               <div class="card-top">
                 <h3 class="h3">Patient Room Occupancy & Allocation Monitoring</h3>
                 <p class="card-desc">
@@ -275,7 +343,7 @@
             <div>
               <h2 class="h2">Dashboards</h2>
               <p class="section-sub">
-                Tableau Public dashboards and data storytelling projects.
+                Tableau Public dashboards and data storytelling projects. Open a tile to explore them on Tableau Public.
               </p>
             </div>
             <div class="split-actions">
@@ -284,8 +352,59 @@
                 href="https://public.tableau.com/app/profile/evans.makori"
                 target="_blank"
                 rel="noreferrer noopener"
-                >Open Tableau Public</a>
+                >Open Tableau Public</a
+              >
             </div>
+          </div>
+
+          <div class="dash-grid">
+            <a
+              class="dash-tile reveal"
+              href="https://public.tableau.com/app/profile/evans.makori"
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="Open Tableau Public dashboards"
+            >
+              <span class="dash-cover" style="--c1:#0f766e;--c2:#2dd4bf">
+                <span class="cover-glyph" aria-hidden="true">📈</span>
+              </span>
+              <span class="dash-meta">
+                <strong>KPI &amp; Performance</strong>
+                <span>Business metrics and narrative dashboards</span>
+              </span>
+            </a>
+
+            <a
+              class="dash-tile reveal"
+              href="https://public.tableau.com/app/profile/evans.makori"
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="Open Tableau Public dashboards"
+            >
+              <span class="dash-cover" style="--c1:#4338ca;--c2:#38bdf8">
+                <span class="cover-glyph" aria-hidden="true">🎯</span>
+              </span>
+              <span class="dash-meta">
+                <strong>Segmentation &amp; Risk</strong>
+                <span>Cohort, churn, and anomaly analysis</span>
+              </span>
+            </a>
+
+            <a
+              class="dash-tile reveal"
+              href="https://public.tableau.com/app/profile/evans.makori"
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="Open Tableau Public dashboards"
+            >
+              <span class="dash-cover" style="--c1:#9a3412;--c2:#fbbf24">
+                <span class="cover-glyph" aria-hidden="true">📉</span>
+              </span>
+              <span class="dash-meta">
+                <strong>Signals &amp; Forecasts</strong>
+                <span>Market signals and forecasting views</span>
+              </span>
+            </a>
           </div>
         </div>
       </section>
@@ -313,6 +432,41 @@
             <div class="skill-card reveal">
               <h3 class="h3">Visualization</h3>
               <p>Tableau, KPI design, narrative dashboards, clear charting conventions.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 class="h2">Experience &amp; Education</h2>
+            <p class="section-sub">The journey behind the work.</p>
+          </div>
+
+          <div class="timeline">
+            <div class="tl-item reveal">
+              <span class="tl-marker" aria-hidden="true"></span>
+              <div class="tl-card">
+                <h3 class="h3">Data Scientist &amp; Analytics Engineer</h3>
+                <p class="tl-meta">Independent / Impact projects · Kenya</p>
+                <p class="tl-desc">
+                  Building analytics products, ML prototypes, and real-time dashboards that turn raw data into
+                  decisions across analytics engineering, forecasting, classification, and automation.
+                </p>
+              </div>
+            </div>
+
+            <div class="tl-item reveal">
+              <span class="tl-marker" aria-hidden="true"></span>
+              <div class="tl-card">
+                <h3 class="h3">Degree — Statistics &amp; Computing</h3>
+                <p class="tl-meta">University</p>
+                <p class="tl-desc">
+                  Foundations in statistical methods, programming, and applied computing that underpin the
+                  analytics and data-engineering work shown here.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -374,6 +528,10 @@
           <a href="#top">Top</a>
           <span class="dot" aria-hidden="true">•</span>
           <a href="#projects">Projects</a>
+          <span class="dot" aria-hidden="true">•</span>
+          <a href="#experience">Experience</a>
+          <span class="dot" aria-hidden="true">•</span>
+          <a href="resume.html">Résumé</a>
           <span class="dot" aria-hidden="true">•</span>
           <a href="#contact">Contact</a>
         </p>

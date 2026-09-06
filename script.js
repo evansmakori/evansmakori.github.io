@@ -24,3 +24,34 @@
 
   revealEls.forEach((el) => io.observe(el));
 })();
+/* Mobile navigation toggle */
+(() => {
+  const header = document.querySelector(".site-header");
+  const toggle = document.querySelector(".nav-toggle");
+  if (!header || !toggle) return;
+
+  const setOpen = (open) => {
+    header.classList.toggle("is-open", open);
+    toggle.setAttribute("aria-expanded", String(open));
+  };
+
+  toggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    setOpen(!header.classList.contains("is-open"));
+  });
+
+  // Close the menu when a link is chosen
+  header.querySelectorAll(".nav-link").forEach((link) => {
+    link.addEventListener("click", () => setOpen(false));
+  });
+
+  // Close on outside click
+  document.addEventListener("click", (e) => {
+    if (!header.contains(e.target)) setOpen(false);
+  });
+
+  // Close on Escape
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") setOpen(false);
+  });
+})();
