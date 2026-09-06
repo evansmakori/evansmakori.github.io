@@ -132,7 +132,7 @@ a:hover {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.45fr 0.85fr;
+  grid-template-columns: 1fr;
   gap: 22px;
 }
 
@@ -142,10 +142,6 @@ a:hover {
   background: rgba(255, 255, 255, 0.04);
   border-radius: var(--radius);
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.32);
-}
-
-.hero-right {
-  display: flex;
 }
 
 .hero-head {
