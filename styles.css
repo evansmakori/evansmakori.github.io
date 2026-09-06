@@ -817,7 +817,8 @@ a:hover {
   display: grid;
   place-items: center;
   height: 130px;
-  background: linear-gradient(135deg, var(--c1), var(--c2));
+  background: #000000;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
 }
 
 .dash-cover-img {
